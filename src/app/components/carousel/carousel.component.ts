@@ -14,11 +14,11 @@ import { Component } from '@angular/core';
     </div>
 
     <div class="indicators">
-      @for (img of images; track $index) { /* 2nd line property binding*/
+      @for (img of images; track $index) {
         <span
           class="dot"
           [class.active]="$index === currentIndex"
-          (click)="goTo($index)"> </span> /*event binding*/
+          (click)="goTo($index)"> </span>
       }
     </div>
   `,
